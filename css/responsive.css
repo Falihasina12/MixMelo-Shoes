@@ -1,0 +1,25 @@
+@media (max-width: 1024px) {
+  .main-nav { gap: 0.75rem; }
+  .hero-content h1 { font-size: clamp(2.5rem, 8vw, 4rem); }
+}
+
+@media (max-width: 768px) {
+  .header-search { width: 120px; }
+  .weather-widget { flex-direction: column; align-items: flex-start; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 576px) {
+  .header-actions { gap: 0.5rem; }
+  .cart-link { padding: 0.65rem 0.7rem; }
+  .product-card__image-wrap img, .gallery-large img { height: 220px; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MixMelo Shoes | Chaussures de Basketball</title>
+    <meta name="description" content="MixMelo Shoes propose des chaussures de basketball premium, performance et lifestyle. Explorez la collection, les promos et les nouveautés." />
+    <meta name="keywords" content="chaussures basketball, mixmelo, sneakers basket, performance, promotions" />
+    <meta name="theme-color" content="#0B0B0F" />
+    <meta property="og:title" content="MixMelo Shoes | Step Into Your Game" />
+    <meta property="og:description" content="Découvrez des chaussures de basketball pensées pour accompagner chaque mouvement, chaque accélération et chaque victoire." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MixMelo Shoes" />
+    <meta name="twitter:description" content="Step Into Your Game" />
+    <link rel="canonical" href="https://example.com/" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="Accueil MixMelo Shoes">MIXMELO <span>SHOES</span></a>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="products.html">Chaussures</a>
+          <a href="products.html?category=Nouveautés">Nouveautés</a>
+          <a href="products.html?category=Promotions">Promotions</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <form class="header-search" action="products.html" method="get">
+            <label class="sr-only" for="header-search-input">Recherche</label>
+            <input id="header-search-input" name="q" type="search" placeholder="Rechercher..." aria-label="Rechercher un produit" />
+            <button type="submit" aria-label="Lancer la recherche">⌕</button>
+          </form>
+          <a href="cart.html" class="cart-link" aria-label="Voir le panier">
+            <span>Panier</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <nav aria-label="Navigation mobile">
+          <a href="index.html">Accueil</a>
+          <a href="products.html">Chaussures</a>
+          <a href="products.html?category=Nouveautés">Nouveautés</a>
+          <a href="products.html?category=Promotions">Promotions</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content reveal">
+            <span class="eyebrow">Performance & style</span>
+            <h1>DOMINEZ LE TERRAIN.</h1>
+            <p>Découvrez des chaussures de basketball pensées pour accompagner chaque mouvement, chaque accélération et chaque victoire.</p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-primary">Découvrir la collection</a>
+              <a href="products.html?category=Promotions" class="btn btn-secondary">Voir les promotions</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>12k+</strong><span>Joueurs</span></li>
+              <li><strong>4.9/5</strong><span>Note moyenne</span></li>
+              <li><strong>48h</strong><span>Livraison</span></li>
+            </ul>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="shoe-glow"></div>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80" alt="Chaussure de basketball premium MixMelo" loading="eager" />
+          </div>
+        </div>
+      </section>
+
+      <section class="categories section-spacing">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Exploration</span>
+            <h2>Choisissez votre univers</h2>
+          </div>
+          <div class="category-grid">
+            <article class="category-card reveal">
+              <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80" alt="Performance" loading="lazy" />
+              <div class="category-card__body">
+                <h3>Performance</h3>
+                <a href="products.html?category=Performance" class="btn btn-text">Voir la collection</a>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=900&q=80" alt="Street Basketball" loading="lazy" />
+              <div class="category-card__body">
+                <h3>Street Basketball</h3>
+                <a href="products.html?category=Street Basketball" class="btn btn-text">Voir la collection</a>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80" alt="Lifestyle" loading="lazy" />
+              <div class="category-card__body">
+                <h3>Lifestyle</h3>
+                <a href="products.html?category=Lifestyle" class="btn btn-text">Voir la collection</a>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=80" alt="Nouveautés" loading="lazy" />
+              <div class="category-card__body">
+                <h3>Nouveautés</h3>
+                <a href="products.html?category=Nouveautés" class="btn btn-text">Voir la collection</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-product section-spacing">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Sélection</span>
+            <h2>Les plus populaires</h2>
+          </div>
+          <div id="featured-products" class="product-grid"></div>
+        </div>
+      </section>
+
+      <section class="weather-banner section-spacing">
+        <div class="container weather-panel reveal">
+          <div class="weather-info">
+            <span class="eyebrow">Conditions près de vous</span>
+            <h2>Le terrain est prêt ?</h2>
+            <div id="weather-widget" class="weather-widget"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">MIXMELO <span>SHOES</span></a>
+          <p>Step Into Your Game</p>
+        </div>
+        <div>
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="products.html">Chaussures</a></li>
+            <li><a href="products.html?category=Nouveautés">Nouveautés</a></li>
+            <li><a href="products.html?category=Promotions">Promotions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Panier</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Informations</h3>
+          <ul>
+            <li><a href="#">Livraison</a></li>
+            <li><a href="#">Retours</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Conditions générales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MixMelo Shoes. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | MixMelo Shoes</title>
+    <meta name="description" content="Finalisez votre commande MixMelo Shoes en une étape simple et sécurisée." />
+    <link rel="canonical" href="https://example.com/checkout.html" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="Accueil MixMelo Shoes">MIXMELO <span>SHOES</span></a>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="products.html">Chaussures</a>
+          <a href="products.html?category=Nouveautés">Nouveautés</a>
+          <a href="products.html?category=Promotions">Promotions</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <form class="header-search" action="products.html" method="get">
+            <label class="sr-only" for="header-search-input">Recherche</label>
+            <input id="header-search-input" name="q" type="search" placeholder="Rechercher..." aria-label="Rechercher un produit" />
+            <button type="submit" aria-label="Lancer la recherche">⌕</button>
+          </form>
+          <a href="cart.html" class="cart-link" aria-label="Voir le panier">
+            <span>Panier</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <nav aria-label="Navigation mobile">
+          <a href="index.html">Accueil</a>
+          <a href="products.html">Chaussures</a>
+          <a href="products.html?category=Nouveautés">Nouveautés</a>
+          <a href="products.html?category=Promotions">Promotions</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero small-hero">
+        <div class="container">
+          <div class="page-hero__content reveal">
+            <span class="eyebrow">Finalisation</span>
+            <h1>Checkout</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="checkout section-spacing">
+        <div class="container checkout-layout">
+          <form id="checkout-form" class="checkout-form" novalidate>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="firstName">Prénom</label>
+                <input id="firstName" name="firstName" type="text" required />
+              </div>
+              <div class="form-row">
+                <label for="lastName">Nom</label>
+                <input id="lastName" name="lastName" type="text" required />
+              </div>
+              <div class="form-row form-full">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="form-row form-full">
+                <label for="phone">Téléphone</label>
+                <input id="phone" name="phone" type="tel" required />
+              </div>
+              <div class="form-row form-full">
+                <label for="address">Adresse</label>
+                <input id="address" name="address" type="text" required />
+              </div>
+              <div class="form-row">
+                <label for="city">Ville</label>
+                <input id="city" name="city" type="text" required />
+              </div>
+              <div class="form-row">
+                <label for="country">Pays</label>
+                <input id="country" name="country" type="text" required />
+              </div>
+              <div class="form-row">
+                <label for="shippingMethod">Méthode de livraison</label>
+                <select id="shippingMethod" name="shippingMethod">
+                  <option value="Standard">Standard</option>
+                  <option value="Express">Express</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="paymentMethod">Méthode de paiement</label>
+                <select id="paymentMethod" name="paymentMethod">
+                  <option value="Carte bancaire (simulation)">Carte bancaire (simulation)</option>
+                  <option value="Mobile Money">Mobile Money</option>
+                  <option value="Paiement à la livraison">Paiement à la livraison</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Valider la commande</button>
+          </form>
+
+          <aside class="checkout-summary">
+            <h2>Commande</h2>
+            <div class="summary-row"><span>Sous-total</span><strong id="checkout-subtotal">0,00 €</strong></div>
+            <div class="summary-row"><span>Livraison</span><strong id="checkout-shipping">0,00 €</strong></div>
+            <div class="summary-row total"><span>Total</span><strong id="checkout-total">0,00 €</strong></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">MIXMELO <span>SHOES</span></a>
+          <p>Step Into Your Game</p>
+        </div>
+        <div>
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="products.html">Chaussures</a></li>
+            <li><a href="products.html?category=Nouveautés">Nouveautés</a></li>
+            <li><a href="products.html?category=Promotions">Promotions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Panier</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Informations</h3>
+          <ul>
+            <li><a href="#">Livraison</a></li>
+            <li><a href="#">Retours</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Conditions générales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MixMelo Shoes. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

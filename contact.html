@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | MixMelo Shoes</title>
+    <meta name="description" content="Contactez MixMelo Shoes pour obtenir de l'aide, des informations ou des conseils sur nos chaussures de basketball." />
+    <link rel="canonical" href="https://example.com/contact.html" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="Accueil MixMelo Shoes">MIXMELO <span>SHOES</span></a>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="products.html">Chaussures</a>
+          <a href="products.html?category=Nouveautés">Nouveautés</a>
+          <a href="products.html?category=Promotions">Promotions</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <form class="header-search" action="products.html" method="get">
+            <label class="sr-only" for="header-search-input">Recherche</label>
+            <input id="header-search-input" name="q" type="search" placeholder="Rechercher..." aria-label="Rechercher un produit" />
+            <button type="submit" aria-label="Lancer la recherche">⌕</button>
+          </form>
+          <a href="cart.html" class="cart-link" aria-label="Voir le panier">
+            <span>Panier</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <nav aria-label="Navigation mobile">
+          <a href="index.html">Accueil</a>
+          <a href="products.html">Chaussures</a>
+          <a href="products.html?category=Nouveautés">Nouveautés</a>
+          <a href="products.html?category=Promotions">Promotions</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero small-hero">
+        <div class="container">
+          <div class="page-hero__content reveal">
+            <span class="eyebrow">Support</span>
+            <h1>Contactez-nous</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-spacing">
+        <div class="container contact-grid">
+          <div class="contact-card reveal">
+            <h2>Envoyez un message</h2>
+            <form class="contact-form">
+              <div class="form-row">
+                <label for="name">Nom</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="form-row">
+                <label for="subject">Sujet</label>
+                <input id="subject" name="subject" type="text" required />
+              </div>
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+          </div>
+
+          <aside class="info-card reveal">
+            <h3>MixMelo Shoes</h3>
+            <p>Email : support@mixmelo-shoes.com</p>
+            <p>Téléphone : +261 34 00 000 00</p>
+            <p>Horaires : Lun - Sam, 9h - 18h</p>
+            <div class="social-links">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">TikTok</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">MIXMELO <span>SHOES</span></a>
+          <p>Step Into Your Game</p>
+        </div>
+        <div>
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="products.html">Chaussures</a></li>
+            <li><a href="products.html?category=Nouveautés">Nouveautés</a></li>
+            <li><a href="products.html?category=Promotions">Promotions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Panier</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Informations</h3>
+          <ul>
+            <li><a href="#">Livraison</a></li>
+            <li><a href="#">Retours</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Conditions générales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MixMelo Shoes. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      document.querySelector('.contact-form')?.addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Votre message a bien été envoyé. Nous vous répondrons rapidement.');
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
